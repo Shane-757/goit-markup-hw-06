@@ -345,10 +345,14 @@
                 </ul>
             </div>
             <div class="footer-right">
-                <label class="footer-input">
-                SUBSCRIBE TO THE NEWSLETTER 
-                <input  type="email" name="email" placeholder="E-mail">
+                <h3 class="footer-input-title">SUBSCRIBE TO THE NEWSLETTER</h3>
+                <label class="footer-input-title">
+                <input class="footer-input" type="email" name="email" placeholder="E-mail">
                 </label>
+                <button class="footer-button" type="subscribe">Subscribe <svg class="send-icon" width="24px" height="24px">
+                    <use href="images\sprite.svg#icon-send"></use>
+                </svg></button>
+                
             </div>
         </div>
     </footer>
@@ -359,26 +363,39 @@
                 </svg>
             </button>
             <form name="customer-information">
-                <b class="form-caption">Leave your information and we'll call you back</b>
-                <label>
+                <b class="modal-caption">Leave your information and we'll call you back</b>
+                <label class="modal-label">
                     Name 
-                    <input type="text" name="full-name">
+                    <svg class="modal-icon" width="18px" height="18px">
+                        <use href="images\sprite.svg#icon-person"></use>
+                    </svg>
+                    <input class="modal-input" type="text" name="full-name">
                 </label>
-                <label>
+                <label class="modal-label">
                     Telephone
-                    <input type="tel" name="phone-number">
+                    <svg class="modal-icon" width="18px" height="18px">
+                        <use href="images\sprite.svg#icon-phone"></use>
+                    </svg>
+                    <input class="modal-input" type="tel" name="phone-number">
                 </label>
-                <label>
+                <label class="modal-label">
                     E-mail 
-                    <input type="email" name="email">           
+                    <svg class="modal-icon" width="18px" height="18px">
+                        <use href="images\sprite.svg#icon-email"></use>
+                    </svg>
+                    <input class="modal-input" type="email" name="email">           
                 </label>
-                <label>
+                <label class="modal-label">
                     Comments
-                    <textarea name="comments" rows="5" placeholder="enter text"></textarea>
+                    <textarea class="modal-input" name="comments" rows="5" placeholder="enter text"></textarea>
                 </label>
-                <label>
-                    <input type="checkbox" name="terms" value="agree">
+                <label class="modal-checkbox-label">
+                    <svg class="modal-checkbox" width="16px" height="15px">
+                        <use href="images\sprite.svg#icon-checkbox"></use>
+                    </svg>
                     I agree with the newsletter and accept the Terms and Conditions
+                    <input class="checkbox" type="checkbox" name="terms" value="agree">
+                    
                 </label>
                     <button class="form-button" type="submit">Send</button>
             </form>
