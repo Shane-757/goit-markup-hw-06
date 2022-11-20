@@ -783,6 +783,7 @@ img{
     font-size: 12px; 
     position: relative;
 }
+
 .modal-icon{
     position: absolute;
     top:45%;
@@ -825,6 +826,8 @@ img{
 
 .modal-caption{
     font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto";
     line-height: calc(23/20);
     color: var(--black-color);
 }
@@ -843,36 +846,27 @@ img{
 }
 
 .modal-checkbox-label{
-    position: relative;
     display: flex;
-    flex-direction:row;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    padding-left: 10px;
-}
-
-.modal-checkbox,
-.modal-checkmark{
-    position: absolute;
-    left:0;
-    top:50%;
-    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .modal-checkbox{
-    border: 1px solid var(--black-color);
     width: 15px;
     height: 15px;
+    border: 1px solid var(--black-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.modal-checkmark{
-    opacity: 0;
-}
+.checkbox:checked + .modal-checkbox-label > .modal-checkbox{
+    background-color: var(--accent-color);
+    border: none;
 
-input:checked + span{
-    border: 2px solid var(--black-color);
 }
-
 
 .form-button{
         margin-bottom: 40px;

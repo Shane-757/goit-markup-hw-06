@@ -394,13 +394,18 @@
                     Comments
                     <textarea class="textarea-modal-input" name="comments" rows="5" placeholder="Enter text"></textarea>
                 </label>
-                <label class="modal-checkbox-label">
-                    I agree with the newsletter and accept the <a class="terms-conditions" href="#">Terms and Conditions</a>
-                    <input class="checkbox" type="checkbox" name="terms" value="agree" required> 
+                <input class="checkbox" type="checkbox" name="terms" value="agree" required id="checkbox-policy"> 
+                <label class="modal-checkbox-label" for="checkbox-policy">
                     <span class="modal-checkbox">
                         <svg class="modal-checkmark" width="11px" height="8px">
-                            <use href="images\sprite.svg#icon-checkmark"></use>
+                            <use href="images/sprite.svg#icon-checkmark"></use>
                         </svg>
+                    </span>
+                    <span>
+                        I agree with the newsletter and accept the 
+                        <a class="terms-conditions" href="#">
+                            Terms and Conditions
+                        </a>
                     </span>
                 </label>
                     <button class="form-button" type="submit">Send</button>
