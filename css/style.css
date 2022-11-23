@@ -802,6 +802,7 @@ img{
     border-radius: 4px;
     height: 40px;
     transition: border-color var(--time) var(--time-function);
+    padding-left: 33px;
 }
 
 .textarea-modal-input{
